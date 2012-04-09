@@ -56,9 +56,66 @@
 					<p>Pellentesque aliquet elementum pulvinar. Vivamus quis erat at felis ultrices tristique in et nibh. Praesent id enim enim.</p>
 				</section>
 			</article>
-			<a class="button go-button action">¿Que esperas? Pide YOO</a>
+			<a class="button go-button action">¿Que esperas? <br />Pide YOO</a>
 		</div>
-	</div>
+		
+		<div id="video" class="row">
+			<div class="column frame">
+				<video id="last-video" class="video-js vjs-default-skin" controls preload="none" poster="http://video-js.zencoder.com/oceans-clip.png"
+				    data-setup="{}">
+				  <source src="http://video-js.zencoder.com/oceans-clip.mp4" type='video/mp4' />
+				  <source src="http://video-js.zencoder.com/oceans-clip.webm" type='video/webm' />
+				  <source src="http://video-js.zencoder.com/oceans-clip.ogv" type='video/ogg' />
+				  <track kind="captions" src="captions.vtt" srclang="en" label="English" />
+				</video>
+			</div>
+			<div class="column description">
+				<section>
+					<h2><strong class="yoo-p">Yoo</strong>presenta:</h2>
+					<h4>"Adiós a la otra"</h4>
+					<p>Más Canales (películas, deportes, series, espectáculos), Internet más poderoso (el doble de velocidad), llamadas locales , de larga distancia y a celular.</p>
+					<p>También puedes consultar todos nuestros spots en el canal oficial de YouTube</p>
+					<a class="button go-button" target="_blank" title="Ir al canal de YOO en YouTube">Ir al canal de YOO en YouTube</a>
+				</section>
+			</div>
+		</div>
+		
+		<div id="paquetes" class="row">
+			<div class="column title">
+				<section>
+					<h2>Paquetes</h2>
+					<p>Atractivos paquetes, ahorros y toda la calidad que esperas de un telefono fijo para tu casa y negocio</p>
+				</section>
+			</div>
+			<div class="paquetes-wrap column">
+				<ul class="column paquetes royalSlidesContainer">
+					<li class="paquete first royalSlide">
+						<img src="http://www.placehold.it/310x310" />
+						<article>
+							<h3><a href="">Larga distancia y celular</a></h3>
+							<section>
+								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse nec enim dolor. Vestibulum a elit ac nibh pretium suscipit. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices.</p>
+							</section>
+						</article>
+					</li>
+				</ul>
+			</div>
+			<div class="paquetes-wrap column">
+				<ul class="column paquetes royalSlidesContainer">
+					<li class="paquete first royalSlide">
+						<img src="http://www.placehold.it/310x310" />
+						<article>
+							<h3><a href="">Segunda linea telefónica</a></h3>
+							<section>
+								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse nec enim dolor. Vestibulum a elit ac nibh pretium suscipit. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices.</p>
+							</section>
+						</article>
+					</li>
+				</ul>
+			</div>
+		</div>
+		
+	</div><!-- end wrap -->
 	
 	<?php 
 		include('inc/footer.html');

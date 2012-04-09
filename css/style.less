@@ -493,6 +493,9 @@ hr {
 
 .button, input[type="submit"], button {
   .btn();
+  br {
+  	line-height: 0;
+  }
 }
 .sbutton {
   font-size: 11px !important;
@@ -1147,6 +1150,15 @@ body>footer{
 	background-position: -29px 0;
 }
 
+.column{
+	>section{
+		display: table-cell;
+		vertical-align: middle;
+		padding: 0 @padding;
+		position: relative;
+	}
+}
+
 
 //------------------------------- Home ---------------
 
@@ -1157,7 +1169,7 @@ body>footer{
 @w15: @w10 * 1.5;
 @w5: @w10 / 2;
 .home{
-	.column, .servicio{
+	.servicio{
 		>section{
 			display: table-cell;
 			vertical-align: middle;
@@ -1474,6 +1486,76 @@ body>footer{
 			.simple; 
 			width: @width - (2 * @padding);
 			padding: @padding;
+		}
+	}
+	#video{
+		.frame, .description{ .grid-6; .block; .g;}
+		h2{.hs;}
+		.frame{
+			display: table;
+			.b;
+		}
+		video{
+			.grid(6);
+			height: auto;
+			display: table-cell;
+			vertical-align: middle;
+			height: ( 4 * (@width / @columns) - (2 * @margin)) + (2 *  0 * @margin);
+		}
+	}
+	#paquetes{
+		.title{ .grid-4; .block; .p;}
+		.paquetes-wrap{ 
+			.grid-4;
+			.block;
+			overflow: hidden;
+			position: relative;
+			display: block;
+			img{
+				.captioned;
+				opacity: 1;
+			}
+			.paquetes{
+				.block;
+				.royal-ul;
+				.first{
+					margin-left: 0;
+				}
+				>li{
+					.grid(4);
+					.block;
+					.royal-li;
+					&:hover article{
+						opacity: 1.0;
+					}
+				}
+			}
+			article{
+				position: absolute;
+				z-index: 10;
+				top: 0;
+				left: 0;
+				right: 0;
+				bottom: 0;
+				padding: @padding;
+				background: fadeout(@black,20%);
+				opacity: 0;
+				.transition(opacity ease-in 0.2s);
+				h3{
+					font-size: @fontsize * 2;
+					margin-bottom: 10px;
+					a{
+						color: @white;
+						&:hover{
+							color: @orange;
+						}
+					}
+				}
+				section{
+					color: @lightgray;
+					line-height: 120%;
+				}
+			}
 		}
 	}
 }

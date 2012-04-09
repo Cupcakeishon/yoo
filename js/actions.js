@@ -21,7 +21,7 @@ $(document).ready(function() {
 	});
 	
 	
-	$(".noticias-wrap").royalSlider({
+	$(".noticias-wrap, .paquetes-wrap").royalSlider({
 		controlNavEnabled: false,
 		directionNavEnabled: false,
 		directionNavAutoHide: false,
