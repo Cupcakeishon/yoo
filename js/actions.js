@@ -20,6 +20,7 @@ $(document).ready(function() {
 		};
 	});
 	
+	
 	$(".noticias-wrap").royalSlider({
 		controlNavEnabled: false,
 		directionNavEnabled: false,

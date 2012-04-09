@@ -758,6 +758,10 @@ table {
 	margin: 0 @margin;
 	overflow: hidden;
 }
+.fullscreen{
+	width: 100%;
+	max-height: auto;
+}
 
 //------------------------------- Header ------------
 
@@ -1016,33 +1020,33 @@ body>footer{
 				position: relative;
 				background: none;
 			}
-			.caption{
-				width: @width;
-				margin: 0 auto;
-				position: relative;
-				z-index: 2;
-				height: 100%;
-				figcaption{
-					position: absolute;
-					width: ( @rowheight * (@width / @columns) - (2 * @margin)) + (2 *  0 * @margin) - (2 * @padding);
-					padding: (@padding * 2) @padding;
-					background: @purple;
-					color: @lightgray;
-					bottom: 0;
-					right: @margin * 2;
-					h2{
-						font-size: @fontsize * 1.5;
-						line-height: 250%;
-						color: @white;
-					}
-				}
-			}
 		}
 		img{
 			max-width: none;
 			min-width: 100%;
 			min-height: 100%;
 			position: absolute;
+		}
+	}
+	.caption{
+		width: @width;
+		margin: 0 auto;
+		position: relative;
+		z-index: 2;
+		height: 100%;
+		figcaption{
+			position: absolute;
+			width: ( @rowheight * (@width / @columns) - (2 * @margin)) + (2 *  0 * @margin) - (2 * @padding);
+			padding: (@padding * 2) @padding;
+			background: @purple;
+			color: @lightgray;
+			bottom: 0;
+			right: @margin * 2;
+			h2{
+				font-size: @fontsize * 1.5;
+				line-height: 250%;
+				color: @white;
+			}
 		}
 	}
 	.slides-nav{
@@ -1142,6 +1146,7 @@ body>footer{
 .tw-share{
 	background-position: -29px 0;
 }
+
 
 //------------------------------- Home ---------------
 
@@ -1438,6 +1443,37 @@ body>footer{
 					}
 				}
 			}
+		}
+	}
+}
+
+// Interna
+// --------------------------------------------
+
+.inside{
+	#eyecatcher{
+		background: @white;
+		.caption{
+			figcaption{
+				right: @margin;
+			}
+		}
+	}
+	.action{margin: @padding;}
+	.art{.grid(8);}
+	.split-2{.columns(2, @margin);}
+	.split-3{.columns(3, @margin);}
+	.info{
+		.row; .g;
+		h1, h2{
+			margin: (@margin * 2) 0;
+			color: @purple;
+			font-size: @fontsize * 4;
+		}
+		article{
+			.simple; 
+			width: @width - (2 * @padding);
+			padding: @padding;
 		}
 	}
 }
