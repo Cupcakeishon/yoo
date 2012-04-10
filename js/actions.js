@@ -41,7 +41,7 @@ $(document).ready(function() {
 		controlNavEnabled: true,
 		welcomeScreenEnabled:false,
 		imageAlignCenter:true,
-		slideshowEnabled: true,
+		slideshowEnabled: false,
 		slideshowDelay:4000,
 		slideshowAutoStart:true,  
 		imageScaleMode:"fit",

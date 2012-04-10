@@ -28,6 +28,7 @@
 			<li class="servicio">
 				<img src="http://www.placehold.it/310x310" />
 				<section>
+					<img class="main-icon" src="img/cable.png" alt="Cable" />
 					<h2>Cable</h2>
 					<p>Los mejores canales, la programación que quieres ver, alta definición, DVR para grabar tus programas favoritos y mucho más.</p>
 					<a class="button">Más detalles</a>
@@ -36,6 +37,7 @@
 			<li class="servicio">
 				<img src="http://www.placehold.it/310x310" />
 				<section>
+					<img class="main-icon" src="img/telefono.png" alt="Teléfono" />
 					<h2>Teléfono</h2>
 					<p>Los mejores canales, la programación que quieres ver, alta definición, DVR para grabar tus programas favoritos y mucho más.</p>
 					<a class="button">Más detalles</a>
@@ -44,6 +46,7 @@
 			<li class="servicio">
 				<img src="http://www.placehold.it/310x310" />
 				<section>
+					<img class="main-icon" src="img/internet.png" alt="Internet" />
 					<h2>Internet</h2>
 					<p>Los mejores canales, la programación que quieres ver, alta definición, DVR para grabar tus programas favoritos y mucho más.</p>
 					<a class="button">Más detalles</a>
