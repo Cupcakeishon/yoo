@@ -1493,8 +1493,122 @@ body>footer{
 	}
 }
 
+// Zona YOO
+// ----------------------------------------------------
+.zona-yoo{
+	>header{
+		#logo{
+			background: @white;
+		}
+		#zona-yoo-logo{
+			width: 75% !important;
+			height: 75% !important;
+			margin: 5% auto 0;
+			display: block;
+			pointer-events: none;
+		}
+	}
+	#eyecatcher{
+		background: @white;
+		.caption{
+			figcaption{
+				color: @white;
+			}
+		}
+	}
+	h2{
+		color: @purple;
+		font-size: @fontsize * 2;
+	}
+	.title{
+		margin: @padding 0 0;
+	}
+	#cableras{
+		.row;
+		.cablera{
+			.simple;
+			.grid(6);
+			.g;
+			padding: 0;
+			border: 0 none;
+			min-height: ( (@rowheight / 2) * (@width / @columns) - (2 * @margin)) + (2 *  0 * @margin);
+			position: relative;
+			margin: @margin;
+			img{
+				width: (@w20 * 9);
+				position: absolute;
+				top: 25%;
+			}
+		}
+		.step1, .step2{
+			margin: @padding;
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 87%;
+			height: 50%;
+			cursor: pointer;
+		}
+		.step2{
+			display: none;
+			position: relative;
+			height: auto;
+			overflow: hidden;
+		}
+		input{
+			margin-bottom: @margin * 2;
+			width: 95%;
+			font-family: @headings;
+			text-transform: uppercase;
+		}
+		.return{
+			font-family: @headings;
+			color: @gray;
+			font-size: @fontsize * 0.8;
+			text-transform: uppercase;
+			margin-bottom: @margin * 2;
+			display: block;
+		}
+		.forgotten{
+			font-family: @headings;
+			text-transform: uppercase;
+			line-height: 400%;
+			&:hover{
+				color: @orange;
+			}
+		}
+		input[type=submit]{
+			float: right;
+			width: auto;
+			padding-left: 50px;
+			background: url('@{img-path}assets/gobtn.png') no-repeat 10px 45% @purple;
+			&:hover{
+				background-color: @orange;
+			}
+		}
+	}
+	>footer{
+		.footer-info{
+			.simple;
+			.grid(8);
+			margin: (@padding * 1.5) (@margin * 2) 0 @margin;
+			color: @white;
+			p{
+				width: 90%;
+			}
+		}
+		#contact-data{
+			margin: 0;
+		}
+		#powered{
+			margin-right: @margin * 2;
+			font-size: @fontsize;
+		}
+	}
+}
+
 // Interna
-// --------------------------------------------
+// ----------------------------------------------------
 
 .inside{
 	#content{
