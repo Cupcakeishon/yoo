@@ -896,8 +896,8 @@ body>header{
 		background: @purple;
 		#logo-yoo{
 			width: 75% !important;
-			height: 75% !important;
-			margin: 5% auto 0;
+			height: auto !important;
+			margin: 20% auto 0;
 			display: block;
 			pointer-events: none;
 		}
@@ -945,7 +945,7 @@ body>footer{
 		h1{
 			letter-spacing: -0.075em;
 			color: @white;
-			font-size: @fontsize * 2.9;
+			font-size: @fontsize * 2.8;
 		}
 		small{
 			color: @orange;
@@ -1019,6 +1019,7 @@ body>footer{
 	background: @purple;
 	z-index: 1;
 	line-height: 0;
+	min-height: 500px;
 	#slides{
 		width: 100%;
 		height: 100%;
@@ -1101,7 +1102,8 @@ body>footer{
 	right: 0;
 	z-index: 3;
 	opacity: 0;
-	.transition(opacity ease-in 0.2s);
+	display: none;
+	.transition(all ease-in 0.2s);
 }
 
 // ------------------------------ Royal Slider ------
@@ -1202,6 +1204,7 @@ body>footer{
 			&:hover{
 				section{
 					opacity: 1.0;
+					display: block;
 				}
 			}
 			.button{
@@ -1224,6 +1227,7 @@ body>footer{
 			padding: @padding * 1.5;
 			background: @purple;
 			.captioned;
+			display: none;
 			h2{
 				font-size: @fontsize * 2.5;
 				float: left;
@@ -1318,6 +1322,7 @@ body>footer{
 			right: @margin;
 			top: 0;
 			padding: @padding;
+			background: @black;
 			background: fadeout(@black,20%);
 			h2{
 				color: @white;
@@ -1387,9 +1392,11 @@ body>footer{
 			line-height: 0;
 			&:hover section{
 				opacity: 1.0;
+				display: block;
 			}
 			section{
 				.captioned;
+				background: @black;
 				background: fadeout(@black,20%);
 				color: @white;
 				padding: @padding;
@@ -1446,6 +1453,7 @@ body>footer{
 					.royal-li;
 					&:hover article{
 						opacity: 1.0;
+						display: block;
 					}
 				}
 			}
@@ -1457,9 +1465,11 @@ body>footer{
 				right: 0;
 				bottom: 0;
 				padding: @padding;
+				background: @black;
 				background: fadeout(@black,20%);
 				opacity: 0;
-				.transition(opacity ease-in 0.2s);
+				display: none;
+				.transition(all ease-in 0.2s);
 				h3{
 					font-size: @width / 60;
 					margin-bottom: 10px;
@@ -1502,8 +1512,8 @@ body>footer{
 		}
 		#zona-yoo-logo{
 			width: 75% !important;
-			height: 75% !important;
-			margin: 5% auto 0;
+			height: auto !important;
+			margin: 15% auto 0;
 			display: block;
 			pointer-events: none;
 		}
@@ -1625,10 +1635,27 @@ body>footer{
 		}
 	}
 	.main-icon{ height: @fontsize * 6;}
-	.action{margin: @padding;}
-	.art{.grid(8);}
-	.split-2{.columns(2, @margin);}
-	.split-3{.columns(3, @margin);}
+	.action{margin: 0 @padding @padding;}
+	.art{
+		.simple; 
+		.grid(8);
+		.button{
+			margin-top: @padding;
+		}
+	}
+	.side{
+		.simple; .grid(3);
+		float: right;
+		margin-right: 0;
+		img{
+			max-width: 100%;
+		}
+	}
+	.main-info{ .simple; .grid(7);}
+	.side-info{.simple; .grid(4); margin: 0 0 0 (@margin * 2);}
+	.split-2-2{.columns(2, @margin);}
+	.split-3-3{.columns(3, @margin);}
+	.split-2-1{.columns(2, @margin);}
 	.info{
 		.row; .g;
 		h1, h2{
@@ -1639,7 +1666,12 @@ body>footer{
 		article{
 			.simple; 
 			width: @width - (2 * @padding);
-			padding: @padding;
+			padding: @padding @padding (@padding * 2);
+			section{
+				.button{
+					margin-top: @padding * 1.5;
+				}
+			}
 		}
 	}
 	.sub-header{
@@ -1692,6 +1724,7 @@ body>footer{
 					.royal-li;
 					&:hover article{
 						opacity: 1.0;
+						display: block;
 					}
 				}
 			}
@@ -1703,9 +1736,11 @@ body>footer{
 				right: 0;
 				bottom: 0;
 				padding: @padding;
+				background: @black;
 				background: fadeout(@black,20%);
 				opacity: 0;
-				.transition(opacity ease-in 0.2s);
+				display: none;
+				.transition(all ease-in 0.2s);
 				h3{
 					font-size: @fontsize * 2;
 					margin-bottom: 10px;
@@ -1721,6 +1756,59 @@ body>footer{
 					line-height: 120%;
 				}
 			}
-		}
+		}	
 	}
+	#mejor-experiencia{
+		.simple;
+		width: 100%;
+		background: transparent;
+		margin: 0;
+		padding: 0;
+		.royalControlNavOverflow{
+			position: absolute;
+			bottom: @padding;
+			right: @padding;
+			overflow: hidden;
+			a{
+				display: block;
+				float: left;
+				width: @w20;
+				height: @w20;
+				background: @white;
+				text-indent: -999em;
+				margin-left: @margin * 2;
+				.radius(50%);
+				&:hover{
+					background: @orange;
+				}
+			}
+			.current{
+				background: @purple;
+			}
+		}
+		ul{
+			.royal-ul;
+			height: @width / 1.5;
+			li{
+				.royal-li;
+				article{
+					z-index: 10;
+					position: absolute;
+					top: 30%;
+					left: @padding;
+					background: @purple;
+					width: @width / 2;
+					color: @white;
+					h3{
+						color: @white;
+					}
+				}
+			}
+			.caption-img{
+				min-width: @width;
+				width: 100%;
+				height: auto;
+			}
+		}
+	}	
 }

@@ -8,7 +8,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
 <link rel="icon" href="img/favicon.png" type="image/png">	
-<title>Teléfono - Pide Yoo</title>
+<title>Internet - Pide Yoo</title>
 
 <?php 
 	include('inc/meta.html');
@@ -37,23 +37,53 @@
 	<div id="content">
 		<div class="info">
 			<article>
-				<img class="main-icon" src="img/telefono.png" alt="Telefonía Digital" />
-				<h1>Telefonía Digital</h1>
+				<img class="main-icon" src="img/internet.png" alt="Cable Digital" />
+				<h1>Internet</h1>
 				<section class="art">
 					<p>Ut venenatis laoreet fermentum. Nunc suscipit purus et nisi posuere ac ornare quam ornare. Morbi porttitor orci non nibh facilisis hendrerit. Mauris ut leo erat. Nullam sit amet tincidunt ligula. Sed adipiscing feugiat iaculis. Curabitur aliquam risus at eros scelerisque pharetra quis in massa. In hac habitasse platea dictumst. Praesent nibh felis, sodales sed egestas ac, tincidunt nec lacus. </p>
 					<p>Pellentesque aliquet elementum pulvinar. Vivamus quis erat at felis ultrices tristique in et nibh. Praesent id enim enim.</p>
 					<p>Ut venenatis laoreet fermentum. Nunc suscipit purus et nisi posuere ac ornare quam ornare. Morbi porttitor orci non nibh facilisis hendrerit. Mauris ut leo erat. Nullam sit amet tincidunt ligula. Sed adipiscing feugiat iaculis. Curabitur aliquam risus at eros scelerisque pharetra quis in massa. In hac habitasse platea dictumst. Praesent nibh felis, sodales sed egestas ac, tincidunt nec lacus. </p>
 					<p>Pellentesque aliquet elementum pulvinar. Vivamus quis erat at felis ultrices tristique in et nibh. Praesent id enim enim.</p>
 				</section>
+				<figure class="side">
+					<img src="img/eye/1.jpg" alt="Caption" />
+				</figure>
 			</article>
 		</div>
+		
+		<div class="info">
+			<div id="mejor-experiencia">
+				<ul class="royalSlidesContainer">
+					<li class="first royalSlide">
+						<img class="caption-img" src="img/eye/1.jpg" />
+						<article>
+							<h3>Mejor experiencia 1</h3>
+							<section>
+								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse nec enim dolor. Vestibulum a elit ac nibh pretium suscipit. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices.</p>
+							</section>
+						</article>
+					</li>
+					
+					<li class="royalSlide">
+						<img class="caption-img" src="img/eye/1.jpg" />
+						<article>
+							<h3>Mejor Experiencia 2</h3>
+							<section>
+								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse nec enim dolor. Vestibulum a elit ac nibh pretium suscipit. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices.</p>
+							</section>
+						</article>
+					</li>
+				</ul>
+			</div>
+		</div>
+		
 		<div class="sub-header">
 			<img src="img/eye/2.jpg" alt="Portabilidad" class="sub-header" />
 		</div>
 		
 		<div class="info">
 			<article>
-				<h2>Portabilidad</h2>
+				<h2>WiFi YOO</h2>
 				<section class="split-2-2">
 					<p>Ut venenatis laoreet fermentum. Nunc suscipit purus et nisi posuere ac ornare quam ornare. Morbi porttitor orci non nibh facilisis hendrerit. Mauris ut leo erat. Nullam sit amet tincidunt ligula. Sed adipiscing feugiat iaculis. Curabitur aliquam risus at eros scelerisque pharetra quis in massa. In hac habitasse platea dictumst. Praesent nibh felis, sodales sed egestas ac, tincidunt nec lacus. </p>
 					<p>Pellentesque aliquet elementum pulvinar. Vivamus quis erat at felis ultrices tristique in et nibh. Praesent id enim enim.</p>
@@ -61,30 +91,32 @@
 					<p>Pellentesque aliquet elementum pulvinar. Vivamus quis erat at felis ultrices tristique in et nibh. Praesent id enim enim.</p>
 				</section>
 			</article>
-			<a class="button go-button action">¿Que esperas? <br />Pide YOO</a>
 		</div>
 		
-		<div class="sub-header">
-			<img src="img/eye/4.jpg" alt="Portabilidad" class="sub-header" />
+		<!-- Start of section -->
+		<div class="sub-header"><!--.header picture -->
+			<img src="img/eye/2.jpg" alt="Portabilidad" class="sub-header" />
 		</div>
-		<div id="video" class="row">
-			<div class="column frame">
-				<video id="last-video" class="video-js vjs-default-skin" controls preload="none" poster="http://video-js.zencoder.com/oceans-clip.png"
-				    data-setup="{}">
-				  <source src="http://video-js.zencoder.com/oceans-clip.mp4" type='video/mp4' />
-				  <source src="http://video-js.zencoder.com/oceans-clip.webm" type='video/webm' />
-				  <source src="http://video-js.zencoder.com/oceans-clip.ogv" type='video/ogg' />
-				  <track kind="captions" src="captions.vtt" srclang="en" label="English" />
-				</video>
-			</div>
-			<div class="column description">
-				<section>
-					<h2 class="comunidad-yoo">Comunidad YOO</h2>
-					<p>Más Canales (películas, deportes, series, espectáculos), Internet más poderoso (el doble de velocidad), llamadas locales , de larga distancia y a celular.</p>
-					<p>También puedes consultar todos nuestros spots en el canal oficial de YouTube</p>
-					<a class="button go-button">¿Que esperas? <br />Pide YOO</a>
+		
+		<div class="info"><!--.description -->
+			<article>
+				<h2>Zona YOO</h2>
+				<section class="main-info">
+					<p>Ut venenatis laoreet fermentum. Nunc suscipit purus et nisi posuere ac ornare quam ornare. Morbi porttitor orci non nibh facilisis hendrerit. Mauris ut leo erat. Nullam sit amet tincidunt ligula. Sed adipiscing feugiat iaculis. Curabitur aliquam risus at eros scelerisque pharetra quis in massa. In hac habitasse platea dictumst. Praesent nibh felis, sodales sed egestas ac, tincidunt nec lacus. </p>
+					<a class="button go-button">Más detalles en <br />Zona YOO</a>
 				</section>
-			</div>
+				<aside class="side-info">
+					<figure class="side">
+						<img src="img/eye/1.jpg" alt="Caption" />
+					</figure>
+				</aside>
+			</article>
+		</div>
+		<!-- End of section -->
+		
+		<!-- Start of section -->
+		<div class="sub-header"><!--.header picture -->
+			<img src="img/eye/2.jpg" alt="Portabilidad" class="sub-header" />
 		</div>
 		
 		<div id="paquetes" class="row">
@@ -99,7 +131,7 @@
 					<li class="paquete first royalSlide">
 						<img src="http://www.placehold.it/310x310" />
 						<article>
-							<h3><a href="">Larga distancia y celular</a></h3>
+							<h3><a href="">Paquete internet 1</a></h3>
 							<section>
 								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse nec enim dolor. Vestibulum a elit ac nibh pretium suscipit. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices.</p>
 							</section>
@@ -112,7 +144,7 @@
 					<li class="paquete first royalSlide">
 						<img src="http://www.placehold.it/310x310" />
 						<article>
-							<h3><a href="">Segunda linea telefónica</a></h3>
+							<h3><a href="">Paquete internet 2</a></h3>
 							<section>
 								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse nec enim dolor. Vestibulum a elit ac nibh pretium suscipit. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices.</p>
 							</section>
