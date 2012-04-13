@@ -15,9 +15,9 @@ $(document).ready(function() {
 	var menu = $('#main-menu');
 	$('#eyecatcher').on('inview', function (event, visible) {
 		if (visible == true) {
-			menu.slideUp(10).removeClass('sticky').slideDown(10);
+			menu.removeClass('sticky');
 		} else {
-			menu.slideUp(0).addClass('sticky').slideDown(250);
+			menu.addClass('sticky');
 		}
 	});
 	
@@ -93,7 +93,17 @@ $(document).ready(function() {
 	
 	$('.tabbed-content').easytabs({
 		animationSpeed: 	250,
-		transitionInEasing: 'easeInOutExpo'
+		transitionInEasing: 'easeInOutExpo',
+		cache: false,
+		updateHash:false
+	});
+	
+	$(".carousel").jCarouselLite({
+	    btnNext : ".carouselnext",
+	    btnPrev : ".carouselprev",
+	    auto    : 10000,
+	    easing  : 'easeInOutBack', 
+	    speed	: 1000
 	});
 	
 	$('.faq').find('li').children('span').click(function(){

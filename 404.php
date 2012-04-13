@@ -16,18 +16,18 @@
 ?>
 
 </head>
-<body id="fourohfour">
-	<?php 
-		include('inc/old.html');
-	?>
+<body id="lost">
 	
 
-	<div id="fourofour">
-		<h3>Página no encontrada</h3>
+	<div>
+		<img src="img/logo.png" />
+		<h1>Página no encontrada</h1>
+		<p>
+			Lo sentimos, la página que estabas buscando no existe o se ha perdido.<br />
+			Intenta revisar la URL si se encuentra mal escrita o da clic en el botón que se encuentra a continuación para regresar a YOO.
+		</p>
+		<a href="/yoo/index.php">Ir al Home</a> 
 	</div>
 
-	<?php 
-		include('inc/scripts.html');
-	?>
 </body>
 </html>

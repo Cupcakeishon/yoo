@@ -38,9 +38,15 @@
 		<div class="info">
 			<article>
 				<h1>Compara YOO</h1>
-				<section class="art">
+				<section class="mid">
 					<p>Ut venenatis laoreet fermentum. Nunc suscipit purus et nisi posuere ac ornare quam ornare. Morbi porttitor orci non nibh facilisis hendrerit. Mauris ut leo erat. Nullam sit amet tincidunt ligula. Sed adipiscing feugiat iaculis. Curabitur aliquam risus at eros scelerisque pharetra quis in massa. In hac habitasse platea dictumst. Praesent nibh felis, sodales sed egestas ac, tincidunt nec lacus. </p>
 				</section>
+				
+				<form class="compara" method="post" action="">
+					<label for="">Ingresa tu código postal para consultar las ventajas que te proporciona YOO con base a tu cablera</label>
+					<input type="number" required pattern="[0-9]{5}" name="" value="" />
+					<input class="button" type="submit" name="" value="Compara" />
+				</form>
 			</article>
 		</div>
 		
@@ -96,11 +102,91 @@
 			</div>
 			
 			<div id="compara-telefono" class="tab">
-				<h2>JS for these tabs</h2>
+				<table>
+					<thead>
+						<tr>
+							<td>Característica</td>
+							<td class="table-yoo"><span class="yoo-b">Yoo</span></td>
+							<td class="table-comp">Otras compañias con paquetes similares</td>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td>Característica 1</td>
+							<td>Si</td>
+							<td>No</td>
+						</tr>
+						<tr>
+							<td>Característica 1</td>
+							<td>Si</td>
+							<td>No</td>
+						</tr>
+						<tr>
+							<td>Característica 1</td>
+							<td>Si</td>
+							<td>No</td>
+						</tr>
+						<tr>
+							<td>Característica 1</td>
+							<td>Si</td>
+							<td>No</td>
+						</tr>
+						<tr>
+							<td>Característica 1</td>
+							<td>Si</td>
+							<td>No</td>
+						</tr>
+						<tr>
+							<td>Característica 1</td>
+							<td>Si</td>
+							<td>No</td>
+						</tr>
+					</tbody>
+				</table>
 			</div>
 			
 			<div id="compara-internet" class="tab">
-				<h2>CSS Styles for these tabs</h2>
+				<table>
+					<thead>
+						<tr>
+							<td>Característica</td>
+							<td class="table-yoo"><span class="yoo-b">Yoo</span></td>
+							<td class="table-comp">Otras compañias con paquetes similares</td>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td>Característica 1</td>
+							<td>Si</td>
+							<td>No</td>
+						</tr>
+						<tr>
+							<td>Característica 1</td>
+							<td>Si</td>
+							<td>No</td>
+						</tr>
+						<tr>
+							<td>Característica 1</td>
+							<td>Si</td>
+							<td>No</td>
+						</tr>
+						<tr>
+							<td>Característica 1</td>
+							<td>Si</td>
+							<td>No</td>
+						</tr>
+						<tr>
+							<td>Característica 1</td>
+							<td>Si</td>
+							<td>No</td>
+						</tr>
+						<tr>
+							<td>Característica 1</td>
+							<td>Si</td>
+							<td>No</td>
+						</tr>
+					</tbody>
+				</table>
 			</div>
 		</div>
 			

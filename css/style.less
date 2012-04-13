@@ -13,7 +13,7 @@ article,aside,details,figcaption,figure,footer,header,hgroup,nav,section{display
                                                              
 // Sizes
 @width:                        	960px;
-@fontsize:						@width / 75; // 13px
+@fontsize:						13px; // 13px
 @iconsize:						16px;
 @logo:							@width / 4.1;
 
@@ -968,9 +968,9 @@ body>footer{
   		padding: @padding;
 		.simple;
 		h1{
-			letter-spacing: -0.075em;
+			letter-spacing: -0.1em;
 			color: @white;
-			font-size: @fontsize * 2.8;
+			font-size: @fontsize * 3;
 		}
 		small{
 			color: @orange;
@@ -1015,13 +1015,13 @@ body>footer{
 		clear: both;
 		float: left;
 		.grid(9);
-		svg{
+		img {
 			width: @width / 10 !important;
-			height: @width / 10.4 !important;
-			margin-right: @w10;
+			height: auto !important;
+			margin: 0 @w10 @w20 0;
 		}
 		.yoo-footer{
-			margin-right: @w20;
+			margin: 0 @w20 0 0 ;
 		}
 	}
 	#powered{
@@ -1031,7 +1031,7 @@ body>footer{
 		text-align: right;
 		display: block;
 		line-height: 0;
-		margin: @w50 0 0 0;
+		margin: @w20 0;
 	}
 }
 
@@ -1687,6 +1687,66 @@ body>footer{
 			width: 100%;
 		}
 	}
+	.compara{
+		.grid(4);
+		.simple;
+		float: right;
+		background: @purple;
+		padding: @padding;
+		color: @white;
+		label{
+			margin-bottom: @padding;
+		}
+		input{
+			width: 90%;
+			-webkit-appearance: textfield;
+		}
+		input[type=submit]{
+			width: auto;
+			&:hover{
+				background: @purple;
+				color: @orange;
+			}
+		}
+	}
+	.desc{ 
+		.simple; .grid(4);
+		border-right: 1px solid darken(@lightergray, 10%);
+		padding-right: @padding;
+		form{
+			margin: @padding 0;
+			background: @purple;
+			padding: @padding;
+			overflow: hidden;
+			label{
+				color: @white;
+				margin-bottom:2 * @margin;
+				display: block;
+			}
+			input{
+				width: 90%;
+				margin: (@padding / 2) 0 0 0;
+				padding-right: 0;
+			}
+			input[type=submit]{
+				float: right;
+				&:hover{
+					color: @orange;
+					background: @purple;
+				}
+			}
+		}
+	}
+	.cobertura{
+		.simple;
+		width: (((@width / @columns) * 7) - (2 * @padding));
+		float:right;
+		padding: 0 0 0 @padding; 
+		h3{
+			margin-bottom: @padding / 2;
+		}
+
+	}
 	.main-info{ .simple; .grid(7);}
 	.side-info{.simple; .grid(4); margin: 0 0 0 (@margin * 2);}
 	.split-2-2{.columns(2, @margin);}
@@ -1698,6 +1758,9 @@ body>footer{
 			margin: (@margin * 2) 0;
 			color: @purple;
 			font-size: @fontsize * 4;
+		}
+		.comunidad-yoo{
+			margin-bottom: @padding;
 		}
 		article{
 			.simple; 
@@ -1794,6 +1857,44 @@ body>footer{
 			}
 		}	
 	}
+	.carousel-wrap{
+		width: @width - (4 * @padding);
+		margin: 0 auto;
+		overflow: hidden;
+		position: relative;
+		padding: 0 @padding;
+		ul{
+			float: left;
+			li{
+				width: ((@width / 3) - (14 * @margin));
+				padding: 0 (3 * @margin);
+				height: auto !important;
+			}	
+			h3{
+				font-size: @fontsize * 2;
+				margin-bottom: @margin;
+			}
+		}
+		>a{
+			display: block;
+			width: 25px;
+			height: 41px;
+			position: absolute;
+			text-indent: -999em;
+			outline: none;
+			cursor: pointer;
+			border: none;
+			top: 40%;
+			background: url('@{img-path}assets/arrows.png') no-repeat top left transparent;
+		}
+		.carouselnext{
+			right: 0;
+			background-position: -26px 0;
+		}
+		.carouselprev{
+			left: 0;
+		}
+	}
 	#mejor-experiencia{
 		.simple;
 		width: 100%;
@@ -1876,6 +1977,7 @@ body>footer{
 			background: @lightergray;
 			margin-bottom: 2 * @margin;
 			overflow: hidden;
+			display: none;
 		}
 		table{
 			margin: @padding;
@@ -1955,7 +2057,31 @@ body>footer{
 		}
 	}
 }
-#fourofour{
+#lost{
 	background: @purple;
 	height: 100%;
+	width: 100%;
+	div{
+		width: @width;
+		margin: 10% auto 0;
+		text-align: center;
+		color: @white;
+		img{
+			width: 30%;
+			display: block;
+			margin: 0 auto @padding;
+		}
+		h1{
+			font-size: @fontsize * 2;
+			color: @orange;
+		}
+		p{
+			width: @width / 2;
+			display: block;
+			margin: @margin auto @padding;
+		}
+		a{
+			.btn;
+		}
+	}
 }

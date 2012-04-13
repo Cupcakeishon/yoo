@@ -169,6 +169,8 @@
 								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse nec enim dolor. Vestibulum a elit ac nibh pretium suscipit. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices.</p>
 							</section>
 							<div class="navi">
+								<div class="fb-share"></div>
+								<div class="tw-share"></div>
 								<a class="button simple-button" title="Leer noticia">Leer noticia</a>
 							</div>
 						</article>
@@ -181,6 +183,8 @@
 								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse nec enim dolor. Vestibulum a elit ac nibh pretium suscipit. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices.</p>
 							</section>
 							<div class="navi">
+								<div class="fb-share"></div>
+								<div class="tw-share"></div>
 								<a class="button simple-button" title="Leer noticia">Leer noticia</a>
 							</div>
 						</article>
@@ -211,6 +215,8 @@
 								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse nec enim dolor. Vestibulum a elit ac nibh pretium suscipit. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices.</p>
 							</section>
 							<div class="navi">
+								<div class="fb-share"></div>
+								<div class="tw-share"></div>
 								<a class="button simple-button" title="Leer noticia">Leer noticia</a>
 							</div>
 						</article>
