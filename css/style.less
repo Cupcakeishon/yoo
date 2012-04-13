@@ -584,8 +584,7 @@ h1 a.button, h2 a.button, h3 a.button {
 
 form {
 	fieldset {
-		border: 1px solid @system;
-		margin: 0 0 18px 0;
+		border: 0 none;
 		padding: @w10;
 		legend {
 			color: darken(@system, 40%);
@@ -618,10 +617,9 @@ form {
 		box-sizing: content-box;
 	}
 	label {
-		.font(bold, 0.900em, 1em);
-		display: block;
 		cursor: pointer;
-		margin: 0 10px 5px;
+		margin: @margin 0 (@margin / 2);
+		display: block;
 		input {
 			display: inline-block;
 		}
@@ -641,7 +639,25 @@ form {
 		resize: none;
 	}
 	input, textarea, select {
-		.font(normal, 1em, 1.1em);
+		.font(normal, @fontsize, 150%);
+	}
+	input[required]{
+		background: @white;
+		color: @orange;
+		border: 0 none;
+		outline: 0 none;
+		.bs(0 0 0 @white);
+		&:focus{
+			color: @purple;
+		}
+	}
+	textarea{
+		height: (@w50 * 3) - 12;
+	}
+	input[type=submit]{
+		margin-top: @padding;
+		background: @purple;
+		color: @white;
 	}
 }
 
@@ -742,6 +758,15 @@ table {
 	width: 80px;
 	height: 39px;
 	margin: 0 (@margin * 2) (@margin * 2) 0;
+	line-height: 110%;
+}
+.yoo-b{
+	background: url('@{img-path}yoo-mini.png') no-repeat top left transparent;
+	display: block;
+	text-indent: -9999em;
+	width: 49px;
+	height: 24px;
+	margin: 0 auto;
 	line-height: 110%;
 }
 .comunidad-yoo{
@@ -1636,6 +1661,13 @@ body>footer{
 	}
 	.main-icon{ height: @fontsize * 6;}
 	.action{margin: 0 @padding @padding;}
+	.video{
+		background: @black;
+	}
+	.intern-cont{
+		.simple;
+		float: right;
+	}
 	.art{
 		.simple; 
 		.grid(8);
@@ -1643,12 +1675,16 @@ body>footer{
 			margin-top: @padding;
 		}
 	}
+	.mid{
+		.simple;
+		.grid(6);
+	}
 	.side{
 		.simple; .grid(3);
 		float: right;
 		margin-right: 0;
 		img{
-			max-width: 100%;
+			width: 100%;
 		}
 	}
 	.main-info{ .simple; .grid(7);}
@@ -1764,6 +1800,10 @@ body>footer{
 		background: transparent;
 		margin: 0;
 		padding: 0;
+		.royalWrapper{
+			height: @width / 2;
+			
+		}
 		.royalControlNavOverflow{
 			position: absolute;
 			bottom: @padding;
@@ -1788,7 +1828,7 @@ body>footer{
 		}
 		ul{
 			.royal-ul;
-			height: @width / 1.5;
+			height: 450px;
 			li{
 				.royal-li;
 				article{
@@ -1810,5 +1850,112 @@ body>footer{
 				height: auto;
 			}
 		}
+	}
+	.tabbed-content{
+		.wrap;
+		background: @lightergray;
+		.controls{
+			overflow: hidden;
+			li{
+				float: left;
+				width: (@width / 3) - (2 * @padding);
+				padding: (2 * @margin) @padding;
+				text-align: center;
+				background: @white;
+				a{
+					font-family: @headings;
+					text-transform: uppercase;
+					display: block;
+				}
+			}
+			.active{
+				background: @lightergray;
+			}
+		}
+		.tab{
+			background: @lightergray;
+			margin-bottom: 2 * @margin;
+			overflow: hidden;
+		}
+		table{
+			margin: @padding;
+			width: @width - (2 * @padding);
+			.table-yoo, .table-comp{
+				width: 25%;
+			}
+			td{
+				padding: (2 * @margin) @padding;
+			}
+			thead{
+				td{
+					font-family: @headings;
+					text-transform: uppercase;
+					background: @purple;
+					color: @white;
+					padding: (2 * @margin) @padding;
+					&:first-child{
+						text-align: left;
+					}
+				}
+			}
+			tbody{
+				td{
+					border: 1px solid darken(@lightergray, 5%);
+				}
+			}
+		}
+	}
+	.contact{
+		.row; .g;
+		>h2{
+			margin: @padding 0 0 @padding;
+		}
+		.description{
+			.simple;
+			width: ( @rowheight * (@width / @columns) - (2 * @margin)) - (2 * @padding);
+			padding: @padding @padding (2 * @padding);
+		}
+		#contact{
+			.simple;
+			width: ( (2* @rowheight) * (@width / @columns) - (2 * @margin)) - (2 * @padding);
+			padding: @padding @padding (2 * @padding);
+			fieldset{
+				width: 43%;
+				float: left;
+				&:first-child, .first{
+					margin-right: 5%;
+				}
+				input, textarea{
+					width: 100%;
+				}
+			}
+		}
+	}
+	#faq{
+		.art;
 	}	
+	.faq{
+		list-style: decimal inside;
+		li{
+			padding: @margin 0;
+			span{
+				cursor: pointer;
+				font-family: @headings;
+				color: @purple;
+				text-transform: uppercase;
+				border-bottom: 1px dotted @purple;
+			}
+			div{
+				display: none;
+				margin: @margin @padding;
+				border-bottom: 1px solid darken(@lightergray, 7%);
+				border-left: 1px solid darken(@lightergray, 7%);
+				padding: 2 * @margin;
+			}
+		}
+	}
+}
+#fourofour{
+	background: @purple;
+	height: 100%;
 }
