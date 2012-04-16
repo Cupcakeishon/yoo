@@ -113,7 +113,7 @@
 					</form>	
 				</section>
 			</div>
-			<div class="column beneficio">
+			<div id="zona-yoo-home" class="column beneficio">
 				<img src="http://www.placehold.it/310x310" />
 				<section>
 					<h2>zona <strong class="yoo">Yoo</strong></h2>

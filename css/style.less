@@ -17,6 +17,9 @@ article,aside,details,figcaption,figure,footer,header,hgroup,nav,section{display
 @iconsize:						16px;
 @logo:							@width / 4.1;
 
+//iPad Sizes
+@ipadwidth:						700px;
+
 
 @margin:                        @width / 192;
 @padding:						@width / 32;
@@ -795,6 +798,12 @@ table {
 	margin: 0 @margin;
 	overflow: hidden;
 }
+.simple-block{
+	display: block;
+	float: left;
+	margin: 0 @margin;
+	overflow: hidden;
+}
 .fullscreen{
 	width: 100%;
 	max-height: auto;
@@ -967,10 +976,11 @@ body>footer{
   		width: (((@columns / 3) * (@width / @columns) - (2 * @margin)) + (2 *  0 * @margin) - (2 * @padding));
   		padding: @padding;
 		.simple;
+		display: block;
 		h1{
-			letter-spacing: -0.1em;
+			letter-spacing: 0;
 			color: @white;
-			font-size: @fontsize * 3;
+			font-size: (@fontsize * 3) - 5;
 		}
 		small{
 			color: @orange;
@@ -1285,6 +1295,7 @@ body>footer{
 				left: @padding - 5;
 				right: @padding - 5;
 				bottom: @padding - 5;
+				.simple-block;
 				
 			}
 		}
@@ -1344,11 +1355,12 @@ body>footer{
 			width: ( @rowheight * (@width / @columns) - (2 * @margin)) + (2 *  0 * @margin) - (2 * @padding);
 			height: ( @rowheight * (@width / @columns) - (2 * @margin)) + (2 *  0 * @margin) - (2 * @padding);
 			z-index: 10;
-			right: @margin;
+			right: 0;
 			top: 0;
 			padding: @padding;
 			background: @black;
 			background: fadeout(@black,20%);
+			.simple-block;
 			h2{
 				color: @white;
 				font-size: @fontsize * 2.2;
@@ -1410,6 +1422,13 @@ body>footer{
 		}
 		.form{ 
 			.grid-4; .block; .p;
+		}
+		#zona-yoo-home{
+			.yoo{
+				float: none;
+				display: inline-block;
+				line-height: 250%;
+			}
 		}
 		.beneficio{ 
 			.grid-4; .block; .b;
@@ -1624,7 +1643,7 @@ body>footer{
 	}
 	>footer{
 		.footer-info{
-			.simple;
+			.simple-block;
 			.grid(8);
 			margin: (@padding * 1.5) (@margin * 2) 0 @margin;
 			color: @white;
@@ -1665,22 +1684,22 @@ body>footer{
 		background: @black;
 	}
 	.intern-cont{
-		.simple;
+		.simple-block;
 		float: right;
 	}
 	.art{
-		.simple; 
+		.simple-block; 
 		.grid(8);
 		.button{
 			margin-top: @padding;
 		}
 	}
 	.mid{
-		.simple;
+		.simple-block;
 		.grid(6);
 	}
 	.side{
-		.simple; .grid(3);
+		.simple-block; .grid(3);
 		float: right;
 		margin-right: 0;
 		img{
@@ -1689,7 +1708,7 @@ body>footer{
 	}
 	.compara{
 		.grid(4);
-		.simple;
+		.simple-block;
 		float: right;
 		background: @purple;
 		padding: @padding;
@@ -1710,7 +1729,7 @@ body>footer{
 		}
 	}
 	.desc{ 
-		.simple; .grid(4);
+		.simple-block; .grid(4);
 		border-right: 1px solid darken(@lightergray, 10%);
 		padding-right: @padding;
 		form{
@@ -1738,7 +1757,7 @@ body>footer{
 		}
 	}
 	.cobertura{
-		.simple;
+		.simple-block;
 		width: (((@width / @columns) * 7) - (2 * @padding));
 		float:right;
 		padding: 0 0 0 @padding; 
@@ -1747,8 +1766,8 @@ body>footer{
 		}
 
 	}
-	.main-info{ .simple; .grid(7);}
-	.side-info{.simple; .grid(4); margin: 0 0 0 (@margin * 2);}
+	.main-info{ .simple-block; .grid(7);}
+	.side-info{.simple-block; .grid(4); margin: 0 0 0 (@margin * 2);}
 	.split-2-2{.columns(2, @margin);}
 	.split-3-3{.columns(3, @margin);}
 	.split-2-1{.columns(2, @margin);}
@@ -1763,7 +1782,7 @@ body>footer{
 			margin-bottom: @padding;
 		}
 		article{
-			.simple; 
+			.simple-block; 
 			width: @width - (2 * @padding);
 			padding: @padding @padding (@padding * 2);
 			section{
@@ -1896,7 +1915,7 @@ body>footer{
 		}
 	}
 	#mejor-experiencia{
-		.simple;
+		.simple-block;
 		width: 100%;
 		background: transparent;
 		margin: 0;
@@ -1952,6 +1971,7 @@ body>footer{
 			}
 		}
 	}
+	
 	.tabbed-content{
 		.wrap;
 		background: @lightergray;
@@ -2007,18 +2027,21 @@ body>footer{
 			}
 		}
 	}
+	#triple-play{
+		margin-top: @padding;
+	}
 	.contact{
 		.row; .g;
 		>h2{
 			margin: @padding 0 0 @padding;
 		}
 		.description{
-			.simple;
+			.simple-block;
 			width: ( @rowheight * (@width / @columns) - (2 * @margin)) - (2 * @padding);
 			padding: @padding @padding (2 * @padding);
 		}
 		#contact{
-			.simple;
+			.simple-block;
 			width: ( (2* @rowheight) * (@width / @columns) - (2 * @margin)) - (2 * @padding);
 			padding: @padding @padding (2 * @padding);
 			fieldset{
@@ -2082,6 +2105,193 @@ body>footer{
 		}
 		a{
 			.btn;
+		}
+	}
+}
+
+#landing{
+	>header{
+		width: @width - (2* @margin);
+		background: @purple;
+		margin: (@margin * 2) auto;
+		top: auto;
+		left: auto;
+		overflow: hidden;
+		padding: @margin;
+		#logo{
+			position: relative;
+			width: @width / 5;
+			height: @width / 7;
+			left: auto;
+			top: auto;
+			float: left;
+			img{
+				margin: @padding auto;
+			}
+		}
+	}
+	.wrap{
+		width: @width - (2 * @padding);
+		padding: @padding;
+		margin: (@margin * 2) auto;
+		background: @lightergray;
+		h1{
+			color: @purple;
+			font-size: @fontsize * 2;
+			margin: (@margin * 2) 0 @padding;
+		}
+	}
+	.app-desc{
+		.simple;
+		.grid(6);
+		margin: 80px 0 0;
+		.button{
+			margin-top: @padding;
+			padding-top: 3 * @margin;
+			padding-bottom: 3 * @margin;
+		}
+	}
+	.store{
+		display: block;
+		margin-top: @padding;
+	}
+	.iphone-bg{
+		background: url('@{img-path}iphone.png') no-repeat top left transparent;
+		.simple; 
+		width: 310px;
+		float: right;
+		height: 600px;
+		position: relative;
+		.app-container{
+			width: 252px;
+			height: 378px;
+			position: absolute;
+			top: 113px;
+			left: 32px;
+			margin: 0;
+			overflow: hidden;
+			background: @black;
+			.iphone-wrap{
+				width: 252px;
+				height: 378px;
+				background: transparent;
+				margin: 0;
+			}
+			ul{
+				.royal-ul;
+				background: transparent;
+				li{
+					.royal-li;
+				}
+			}
+		}
+	}
+	
+	
+	.android-bg{
+		background: url('@{img-path}android.png') no-repeat top left transparent;
+		.simple; 
+		width: 310px;
+		float: right;
+		height: 585px;
+		position: relative;
+		.app-container{
+			width: 247px;
+			height: 404px;
+			position: absolute;
+			top: 76px;
+			left: 29px;
+			margin: 0;
+			overflow: hidden;
+			background: @black;
+			.android-wrap{
+				width: 247px;
+				margin: 0;
+				height: 404px;
+				background: transparent;
+			}
+			ul{
+				.royal-ul;
+				background: transparent;
+				li{
+					.royal-li;
+				}
+			}
+		}
+	}
+	
+	footer{
+		.wrap;
+		.row;
+		background: @gray;
+		color: @white;
+		padding: 0;
+		.footer-info{
+			.simple;
+			width: (((@width / 12) * 7)) - (4 * @margin);
+			margin: @padding;
+		}
+		#contact-data{
+			.simple;
+			width: (((@width / 12) * 4)) - (2 * @padding);
+			padding: @padding @padding 0;
+		}
+		.icons-cable{
+			width: (((@width / 12) * 8)) - (4 * @margin);
+			margin: @padding;
+		}
+		#powered{
+		margin: (@padding * 1.5) @padding 0;
+		width: auto;
+		}
+	}
+}
+
+// __    __     ______     _____     __     ______    
+///\ "-./  \   /\  ___\   /\  __-.  /\ \   /\  __ \   
+//\ \ \-./\ \  \ \  __\   \ \ \/\ \ \ \ \  \ \  __ \  
+// \ \_\ \ \_\  \ \_____\  \ \____-  \ \_\  \ \_\ \_\ 
+//  \/_/  \/_/   \/_____/   \/____/   \/_/   \/_/\/_/ 
+                                                    
+
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {
+	.visible-block(@opacity: 0.9){
+		opacity: @opacity;
+		display: block;
+	}
+	.home{
+		#servicios{
+			section{
+				.visible-block;
+			}
+			&:hover{
+				section{
+					.visible-block;
+				}
+			}
+		}
+		#beneficios{
+			.beneficio{
+				section{
+					.visible-block;
+				}
+			}
+		}
+		#noticias{
+			.noticias-wrap{
+				article{
+					.visible-block;
+				}
+			}
+		}
+	}
+	.inside{
+		#paquetes{
+			.paquetes-wrap{
+				article{
+					.visible-block;
+				}
+			}
 		}
 	}
 }

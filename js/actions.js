@@ -50,14 +50,14 @@ $(document).ready(function() {
 	});  
 	
 	$("#apps-banners").royalSlider({
-		preloadNearbyImages:true, 
+		preloadNearbyImages:false, 
 		controlNavEnabled: false,
 		directionNavEnabled: false,
 		directionNavAutoHide: false,
 		controlNavEnabled: true,
 		welcomeScreenEnabled:false,
-		imageAlignCenter:true,
-		slideshowEnabled: false,
+		imageAlignCenter:false,
+		slideshowEnabled: true,
 		slideshowDelay:4000,
 		slideshowAutoStart:true,  
 		imageScaleMode:"fit",
@@ -70,8 +70,6 @@ $(document).ready(function() {
 		minSlideOffset: 20,
 		blockLinksOnDrag: true,
 		slideTransitionEasing:"easeInOutElastic",
-		afterSlideChange: function(){
-		}			
 	}); 
 	
 	$("#scrollamatic").overscroll();

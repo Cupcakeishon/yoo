@@ -60,7 +60,6 @@
 					<a class="return">Regresar</a>
 					<input type="text" name="" placeholder="Usuario" value="" />
 					<input type="password" name="" placeholder="Contraseña" value="" />
-					<input type="text" name="" placeholder="Localidad" value="" />
 					<a class="forgotten" href="">¿Olvidaste tu contraseña?</a>
 					<input class="button go-button" type="submit" name="" value="Conéctate" />
 				</div>
@@ -74,7 +73,6 @@
 					<a class="return">Regresar</a>
 					<input type="text" name="" placeholder="Usuario" value="" />
 					<input type="password" name="" placeholder="Contraseña" value="" />
-					<input type="text" name="" placeholder="Localidad" value="" />
 					<a class="forgotten" href="">¿Olvidaste tu contraseña?</a>
 					<input class="button go-button" type="submit" name="" value="Conéctate" />
 				</div>
@@ -89,7 +87,6 @@
 					<a class="return">Regresar</a>
 					<input type="text" name="" placeholder="Usuario" value="" />
 					<input type="password" name="" placeholder="Contraseña" value="" />
-					<input type="text" name="" placeholder="Localidad" value="" />
 					<a class="forgotten" href="">¿Olvidaste tu contraseña?</a>
 					<input class="button go-button" type="submit" name="" value="Conéctate" />
 				</div>
