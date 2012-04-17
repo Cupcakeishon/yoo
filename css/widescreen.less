@@ -12,8 +12,8 @@ article,aside,details,figcaption,figure,footer,header,hgroup,nav,section{display
 @img-path:						"../img/";
                                                              
 // Sizes
-@width:                        	960px;
-@fontsize:						@width / 75; // 13px
+@width:                        	1300px;
+@fontsize:						16px; // 13px
 @iconsize:						16px;
 @logo:							@width / 4.1;
 
@@ -1045,28 +1045,8 @@ body>footer{
 	}
 }
 
-//------------------------------- Video -------------
-
-#intro{
-	position: relative;
-	z-index: 100;
-	background: @purple;
-	top: 0;
-	width: 100%;
-	display: block;
-	padding: 0;
-	margin: 0;
-	left: 0;
-	background: @purple;
-}
 
 //------------------------------- Slider ------------
-
-#eye-container{
-	background: @black;
-	min-height: @width/2;
-	width: 100%;
-}
 
 #eyecatcher{
 	overflow: hidden;
@@ -1239,16 +1219,6 @@ body>footer{
 @w15: @w10 * 1.5;
 @w5: @w10 / 2;
 .home{
-	#eyecatcher, #main-menu, #logo{
-		display: none;
-	}
-	.initial-state, .initial-wrap{
-		position: absolute;
-	}
-	.initial-state{
-		top: @padding !important;
-		left: @padding !important;
-	}
 	.servicio{
 		>section{
 			display: table-cell;

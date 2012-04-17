@@ -12,6 +12,7 @@ $(document).ready(function() {
 		Modernizr.load('js/polyfills/placeholder-support.min.js');
 	}
 	
+	
 	var menu = $('#main-menu');
 	$('#eyecatcher').on('inview', function (event, visible) {
 		if (visible == true) {
@@ -30,12 +31,7 @@ $(document).ready(function() {
 	// Just in home
 	// ----------------------------------------------------------
 	
-	$('#slides').superslides({
-		play: true,
-		slide_easing: 'easeInOutCubic',
-		slide_speed: 800,
-		nav_class: 'slides-nav'
-	})
+
 	
 	$(".noticias-wrap, .paquetes-wrap").royalSlider({
 		controlNavEnabled: false,
@@ -110,4 +106,9 @@ $(document).ready(function() {
 	    }
 	    $(this).next().slideToggle(300);
 	});
+	
+	if ($.browser.msie && ieVersion < 9 ) {
+	    alert('old');
+	}
 });
+

@@ -8,7 +8,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=yes">
 <link rel="icon" href="img/favicon.png" type="image/png">	
-<title>Yoo Sports para Android - Pide Yoo</title>
+<title>Yoo Sports para iPhone - Pide Yoo</title>
 
 <?php 
 	include('inc/meta.html');
@@ -18,27 +18,27 @@
 </head>
 <body id="landing">
 
-	<?php include('inc/header.html') ?>
+		<?php include('inc/header.html') ?>
 	
 	<div class="wrap row">
 		<div class="app-desc">
-			<h1>YOO Sports para Android</h1>
+			<h1>YOO TV para iPhone</h1>
 			<p>
 			Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque et cursus sapien. Integer id odio quis metus dignissim fermentum at ac urna. Ut ultrices, erat non hendrerit varius, nulla nisl gravida diam, non convallis tellus elit at enim.</p>
 			<p>Phasellus aliquam tempus volutpat. Cras nec nulla eget risus sagittis tincidunt pulvinar lobortis metus. Morbi eu ante at metus venenatis scelerisque vitae eget eros. Morbi sagittis arcu in nisi sagittis dapibus. Phasellus elementum bibendum dolor at imperdiet. Etiam vulputate dolor ac dolor laoreet congue. Mauris ac imperdiet est. Duis a mauris elit. Aenean ut velit eu nisl congue porttitor.</p>
 			<a class="button go-button">Descarga la aplicación</a>
-			<img class="store" src="img/googleplay.png" alt="Consíguelo en Google Play" />
+			<img class="store" src="img/appstore.png" alt="Disponible en la app store" />
 		</div>
  		
-		<div class="android-bg">
+		<div class="iphone-bg">
 			<div class="app-container">
-			<div class="android-wrap column">
+			<div class="iphone-wrap column">
 				<ul class="column app royalSlidesContainer">
 					<li class="first royalSlide">
-						<img src="http://www.placehold.it/247x404" />
+						<img src="http://www.placehold.it/252x378" />
 					</li>
 					<li class="royalSlide">
-						<img src="http://www.placehold.it/247x404" />
+						<img src="http://www.placehold.it/252x378" />
 					</li>
 				</ul>
 			</div>
@@ -64,7 +64,7 @@
 				<img src="img/cablemty-w.png" alt="Cablevisión Monterrey" />
 			</div>
 			<a id="powered" href="" title="Pide Yoo">www.pideyoo.com</a>
-	</footer>
+		</footer>
 	
 	<script src="//ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
 	<script>window.jQuery || document.write('<script src="js/libs/jquery-1.7.1.min.js"><\/script>')</script>
@@ -74,7 +74,7 @@
 	
 	<script>
 		$(document).ready(function() {
-			$(".android-wrap").royalSlider({
+			$(".iphone-wrap").royalSlider({
 				controlNavEnabled: false,
 				directionNavEnabled: false,
 				directionNavAutoHide: false,

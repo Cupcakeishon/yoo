@@ -41,7 +41,8 @@
 				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec mattis lectus nec justo imperdiet eleifend. Suspendisse pharetra diam vitae tortor commodo fermentum. Maecenas quam nisl, dignissim et volutpat ut, tincidunt nec purus. Fusce id accumsan enim. Donec et scelerisque orci. Sed placerat fermentum magna vel vestibulum. Nunc eget orci justo, a condimentum urna.</p>
 				<p>Mauris quis massa vel odio iaculis aliquam a nec ante. Mauris vulputate ullamcorper tortor, id mattis quam pulvinar eget. Maecenas purus magna, luctus ornare dapibus sit amet, blandit a felis. </p>
 			</div>
-			<form id="contact" class="column grid-8">
+			
+			<form action="/pideyoo/gracias.php" id="contact" class="column grid-8">
 				<fieldset>
 					<label>Nombre</label>
 					<input required type="text" name="" value="" />

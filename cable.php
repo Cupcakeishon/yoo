@@ -47,6 +47,8 @@
 				</section>
 			</article>
 		</div>
+		
+		<!--section-->
 		<div class="sub-header">
 			<img src="img/eye/2.jpg" alt="Portabilidad" class="sub-header" />
 		</div>
@@ -59,13 +61,32 @@
 					<p>Pellentesque aliquet elementum pulvinar. Vivamus quis erat at felis ultrices tristique in et nibh. Praesent id enim enim.</p>
 					<p>Ut venenatis laoreet fermentum. Nunc suscipit purus et nisi posuere ac ornare quam ornare. Morbi porttitor orci non nibh facilisis hendrerit. Mauris ut leo erat. Nullam sit amet tincidunt ligula. Sed adipiscing feugiat iaculis. Curabitur aliquam risus at eros scelerisque pharetra quis in massa. In hac habitasse platea dictumst. Praesent nibh felis, sodales sed egestas ac, tincidunt nec lacus. </p>
 					<p>Pellentesque aliquet elementum pulvinar. Vivamus quis erat at felis ultrices tristique in et nibh. Praesent id enim enim.</p>
-					<a class="button go-button">¿Que esperas? <br />Pide YOO</a>
+					<a href="/pideyoo/contacto.php" class="button go-button">¿Que esperas? <br />Pide YOO</a>
 				</section>
 				<figure class="side">
 					<img src="img/eye/1.jpg" alt="Caption" />
 				</figure>
 			</article>
 		</div>
+		<!--/section-->
+		
+		<!--section-->
+		<div class="sub-header">
+			<img src="img/eye/2.jpg" alt="Portabilidad" class="sub-header" />
+		</div>
+		
+		<div class="info">
+			<article>
+				<h2>Guía de programación</h2>
+				<section class="split-2-2">
+					<p>Ut venenatis laoreet fermentum. Nunc suscipit purus et nisi posuere ac ornare quam ornare. Morbi porttitor orci non nibh facilisis hendrerit. Mauris ut leo erat. Nullam sit amet tincidunt ligula. Sed adipiscing feugiat iaculis. Curabitur aliquam risus at eros scelerisque pharetra quis in massa. In hac habitasse platea dictumst. Praesent nibh felis, sodales sed egestas ac, tincidunt nec lacus. </p>
+					<p>Pellentesque aliquet elementum pulvinar. Vivamus quis erat at felis ultrices tristique in et nibh. Praesent id enim enim.</p>
+					<p>Ut venenatis laoreet fermentum. Nunc suscipit purus et nisi posuere ac ornare quam ornare. Morbi porttitor orci non nibh facilisis hendrerit. Mauris ut leo erat. Nullam sit amet tincidunt ligula. Sed adipiscing feugiat iaculis. Curabitur aliquam risus at eros scelerisque pharetra quis in massa. In hac habitasse platea dictumst. Praesent nibh felis, sodales sed egestas ac, tincidunt nec lacus. </p>
+					<p>Pellentesque aliquet elementum pulvinar. Vivamus quis erat at felis ultrices tristique in et nibh. Praesent id enim enim.</p>
+				</section>
+			</article>
+		</div>
+		<!--/section-->
 		
 		<!-- Start of section -->
 		<div class="sub-header"><!--.header picture -->
@@ -80,7 +101,7 @@
 					<p>Pellentesque aliquet elementum pulvinar. Vivamus quis erat at felis ultrices tristique in et nibh. Praesent id enim enim.</p>
 					<p>Ut venenatis laoreet fermentum. Nunc suscipit purus et nisi posuere ac ornare quam ornare. Morbi porttitor orci non nibh facilisis hendrerit. Mauris ut leo erat. Nullam sit amet tincidunt ligula. Sed adipiscing feugiat iaculis. Curabitur aliquam risus at eros scelerisque pharetra quis in massa. In hac habitasse platea dictumst. Praesent nibh felis, sodales sed egestas ac, tincidunt nec lacus. </p>
 					<p>Pellentesque aliquet elementum pulvinar. Vivamus quis erat at felis ultrices tristique in et nibh. Praesent id enim enim.</p>
-					<a class="button go-button">¿Que esperas? <br />Pide YOO</a>
+					<a href="/pideyoo/contacto.php" class="button go-button">¿Que esperas? <br />Pide YOO</a>
 				</section>
 				<aside class="side-info">
 					<p>Pellentesque aliquet elementum pulvinar. Vivamus quis erat at felis ultrices tristique in et nibh. Praesent id enim enim.</p>
@@ -106,7 +127,7 @@
 					<p>Pellentesque aliquet elementum pulvinar. Vivamus quis erat at felis ultrices tristique in et nibh. Praesent id enim enim.</p>
 				</section>
 			</article>
-			<a class="button go-button action">¿Que esperas? <br />Pide YOO</a>
+			<a href="/pideyoo/contacto.php" class="button go-button action">¿Que esperas? <br />Pide YOO</a>
 		</div>
 		<!-- End of section -->
 		

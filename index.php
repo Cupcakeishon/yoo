@@ -147,7 +147,7 @@
 					<h4>"Adiós a la otra"</h4>
 					<p>Más Canales (películas, deportes, series, espectáculos), Internet más poderoso (el doble de velocidad), llamadas locales , de larga distancia y a celular.</p>
 					<p>También puedes consultar todos nuestros spots en el canal oficial de YouTube</p>
-					<a class="button go-button" target="_blank" title="Ir al canal de YOO en YouTube">Ir al canal de YOO en YouTube</a>
+					<a href="http://www.youtube.com/canalYoo" target="_blank" class="button go-button" target="_blank" title="Ir al canal de YOO en YouTube">Ir al canal de YOO en YouTube</a>
 				</section>
 			</div>
 		</div>
@@ -230,5 +230,40 @@
 		include('inc/footer.html');
 		include('inc/scripts.html');
 	?>
+	
+	<script>
+		$(document).ready(function() {
+		if (Modernizr.video){	
+			$('#intro').on('ended', function(){
+				$('#intro').remove();
+				$('#eye-container').animate({
+				    color: '#502d7e'
+				  }, 1000, function() {
+				  });
+				$('#slides').superslides({
+					play: true,
+					slide_easing: 'easeInOutCubic',
+					slide_speed: 800,
+					nav_class: 'slides-nav'
+				})
+				$('#logo, #content, footer').fadeIn(2000);
+				$('#main-menu').slideDown(1000);
+				$('#eyecatcher').delay('5000').fadeIn(2000);
+
+				
+			});
+			
+		}
+		else{
+			$('#home').fadeIn(250);
+			$('#slides').superslides({
+				play: true,
+				slide_easing: 'easeInOutCubic',
+				slide_speed: 800,
+				nav_class: 'slides-nav'
+			})
+		}
+		});
+	</script>
 </body>
 </html>

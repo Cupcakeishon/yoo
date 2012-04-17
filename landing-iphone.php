@@ -6,7 +6,7 @@
 <head>
 <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=yes">
 <link rel="icon" href="img/favicon.png" type="image/png">	
 <title>Yoo Sports para iPhone - Pide Yoo</title>
 
@@ -18,11 +18,7 @@
 </head>
 <body id="landing">
 
-	<header>
-		<a href="/pideyoo/index.php" id="logo" title="Pide YOO">
-			<img src="img/logo.png" id="logo-yoo" alt="Pide YOO" />
-		</a>
-	</header>
+		<?php include('inc/header.html') ?>
 	
 	<div class="wrap row">
 		<div class="app-desc">
