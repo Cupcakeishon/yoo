@@ -31,7 +31,6 @@ $(document).ready(function() {
 	// Just in home
 	// ----------------------------------------------------------
 	
-
 	
 	$(".noticias-wrap, .paquetes-wrap").royalSlider({
 		controlNavEnabled: false,
@@ -64,8 +63,8 @@ $(document).ready(function() {
 		captionShowEasing:"easeOutCubic",
 		captionShowDelay:200, 
 		minSlideOffset: 20,
-		blockLinksOnDrag: true,
 		slideTransitionEasing:"easeInOutElastic",
+		blockLinksOnDrag: true
 	}); 
 	
 	$("#scrollamatic").overscroll();
@@ -106,9 +105,4 @@ $(document).ready(function() {
 	    }
 	    $(this).next().slideToggle(300);
 	});
-	
-	if ($.browser.msie && ieVersion < 9 ) {
-	    alert('old');
-	}
 });
-

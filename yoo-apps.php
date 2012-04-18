@@ -73,9 +73,10 @@
 						</li>
 				        <li>
 				        	<h3>YOO Sports para Android</h3>
+				        	<article>
 				        	<p>Ut venenatis laoreet fermentum. Nunc suscipit purus et nisi posuere ac ornare quam ornare. Morbi porttitor orci non nibh facilisis hendrerit. Mauris ut leo erat. Nullam sit amet tincidunt ligula. Sed adipiscing feugiat iaculis. Curabitur aliquam risus at eros scelerisque pharetra quis in massa. In hac habitasse platea dictumst. Praesent nibh felis, sodales sed egestas ac, tincidunt nec lacus. </p>
+				        	</article>
 				        	<a href="/pideyoo/landing-android.php" class="button go-button">Más detalles</a>
-				        	
 				        </li>
 				    </ul>
 				</div>

@@ -18,8 +18,10 @@
 </head>
 <body id="landing">
 
-	<?php include('inc/header.html') ?>
-	
+	<?php 
+	include('inc/old.html');
+	include('inc/header.html') 
+	?>	
 	<div class="wrap row">
 		<div class="app-desc">
 			<h1>YOO Sports para Android</h1>

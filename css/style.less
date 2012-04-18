@@ -487,11 +487,12 @@ hr {
 	content: "";
 }
 .oldbrowser, noscript {
-	margin: 0.2em 0;
+	margin: 0 0;
 	background: @red;
 	color: @white;
-	padding: 0.2em 0;
+	padding: (@padding / 2) @padding;
 	display: block;
+	text-align: center;
 }
 
 .button, input[type="submit"], button {
@@ -752,6 +753,7 @@ table {
 //------------------------------- Main --------------
 
 #content{.wrap;}
+
 
 .yoo, .yoo-p{
 	background: url('@{img-path}yoo.png') no-repeat top left transparent;
@@ -1063,7 +1065,7 @@ body>footer{
 //------------------------------- Slider ------------
 
 #eye-container{
-	background: @black;
+	background: @purple;
 	min-height: @width/2;
 	width: 100%;
 }
@@ -1944,6 +1946,12 @@ body>footer{
 			border: none;
 			top: 40%;
 			background: url('@{img-path}assets/arrows.png') no-repeat top left transparent;
+		}
+		article{
+			width: 100%;
+			padding: 0 0 @padding;
+			margin: 0;
+			min-height: @width / 4;
 		}
 		.carouselnext{
 			right: 0;

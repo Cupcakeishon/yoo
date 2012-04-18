@@ -232,38 +232,37 @@
 	?>
 	
 	<script>
-		$(document).ready(function() {
-		if (Modernizr.video){	
-			$('#intro').on('ended', function(){
-				$('#intro').remove();
-				$('#eye-container').animate({
-				    color: '#502d7e'
-				  }, 1000, function() {
-				  });
+	$(document).ready(function() {
+		if (Modernizr.video){
+			var $intro = $('#intro');
+			var $logo = $('#logo');
+			$('header').find('.wrap').addClass('initial-wrap');
+			$logo.addClass('initial-state').show();
+			$intro.on('ended', function(){
+				$logo.hide().removeClass('initial-state').delay(1000).fadeIn(1000);
+				$('header').find('.wrap').removeClass('initial-wrap');
+				$intro.fadeOut(500).delay(500).remove();
 				$('#slides').superslides({
 					play: true,
 					slide_easing: 'easeInOutCubic',
 					slide_speed: 800,
 					nav_class: 'slides-nav'
-				})
-				$('#logo, #content, footer').fadeIn(2000);
-				$('#main-menu').slideDown(1000);
-				$('#eyecatcher').delay('5000').fadeIn(2000);
-
-				
+				})				
+				$('#eyecatcher').hide().fadeIn(2000);
+				$('#main-menu').slideDown(1000);				
 			});
 			
 		}
 		else{
-			$('#home').fadeIn(250);
+			$('#logo, #eyecatcher').fadeIn(500);
+			$('#main-menu').slideDown(250).css('display', 'block');
 			$('#slides').superslides({
-				play: true,
-				slide_easing: 'easeInOutCubic',
-				slide_speed: 800,
-				nav_class: 'slides-nav'
-			})
+			    play: true,
+			    slide_easing: 'easeInOutCubic',
+			    slide_speed: 800
+			  })
 		}
-		});
+	});
 	</script>
 </body>
 </html>
