@@ -133,12 +133,12 @@
 		
 		<div id="youtube" class="row">
 			<div class="column frame">
-				<video id="last-video" class="video-js vjs-default-skin" controls preload="none" poster="http://video-js.zencoder.com/oceans-clip.png"
-				    data-setup="{}">
-				  <source src="http://video-js.zencoder.com/oceans-clip.mp4" type='video/mp4' />
-				  <source src="http://video-js.zencoder.com/oceans-clip.webm" type='video/webm' />
-				  <source src="http://video-js.zencoder.com/oceans-clip.ogv" type='video/ogg' />
-				  <track kind="captions" src="captions.vtt" srclang="en" label="English" />
+				
+				<video id="my_video_1" class="video-js vjs-default-skin" controls
+				  preload="auto" width="640" height="264" poster="http://video-js.zencoder.com/oceans-clip.png"
+				  data-setup="{}">
+				  <source src="http://video-js.zencoder.com/oceans-clip.mp4" type='video/mp4'>
+				  <source src="http://video-js.zencoder.com/oceans-clip.webm" type='video/webm'>
 				</video>
 			</div>
 			<div class="column description">
